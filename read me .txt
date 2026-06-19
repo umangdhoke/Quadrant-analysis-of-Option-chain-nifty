@@ -1,0 +1,21 @@
+# Zerodha OI Recorder — Professional Options Analytics
+
+Real-time NIFTY / BANKNIFTY / SENSEX Open Interest recorder 
+using Zerodha Kite Connect WebSocket. Logs 20 metrics every 
+5 seconds to a live Excel dashboard.
+
+## Features
+- 5-second OI tick recording via KiteTicker WebSocket
+- CE/PE quadrant analysis (ITM/OTM split at live spot)
+- PCR, Net Bias, OI Imbalance, Delta CE/PE metrics
+- Options Traded Value + Index Equity Traded Value (5s window)
+- Algo signal engine (STRONG BUY → STRONG SELL, 9 signal types)
+- Live Excel dashboard with 3 embedded charts (xlwings COM)
+- CSV crash-safe backup, auto-save every 5 minutes
+- Zerodha config auto-creator with expiry date dropdowns
+
+## Scripts
+- `zerodha_token_generator.py` — Daily login & token refresh
+- `oi_recorder_pro_equity.py` — Live OI recorder + Excel dashboard
+
+## Requirements
